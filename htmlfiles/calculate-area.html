@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="navigation container">
+            <div class="nav-items">
+                <div class="nav-repo">
+                    <a href="https://github.com/dev-enforced/triangles-arena-m12" rel="noopener noreferrer"
+                        target="_blank" class="nav-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <h1 class="nav-title">AREA CALCULATOR</h1>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>This mini area application calculates the area of an triangle using certain formulae based on the information which the user fills out in the below mentioned fields.</h3>
+            </div>
+
+            <div class="main-collage">
+                <div class="area-collection">
+                    <div class="area-card">
+                        <div class="area-info">
+                           <h3>Area of a right Angle Triangle</h3>
+                           <br>
+                           <p class="formulae">Formulae: <strong>1/2 x base x height</strong></p>
+                        </div>
+                        <form class="main-form" id="form1">
+                            <label for="base">Base: </label>
+                            <input type="number" min='0.01' step='any' name="Base" id="base" required="required"
+                                placeholder="eg. 4">
+                            <label for="angle2">Height: </label>
+                            <input type="number" min='0.01' step='any' name="Height" id="height" required="required"
+                                placeholder="eg. 8">
+                            <div class="buton">
+                                <button type="submit" id="btn-submit">CHECK</button>
+                            </div>
+                        </form>
+
+                        <div class="main-message m1">
+                            <p class="mess1" id="output-short">Here the result will be displayed</p>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-info">
+                            <h3>Area of an equilateral triangle</h3>
+                            <br>
+                            <p class="formulae">Formulae: <strong>(√3)/4 × side<sup>2</sup></strong></p>
+                        </div>
+                        <form class="main-form" id="form2">
+                            <label for="side">Side Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side" id="side" required="required"
+                                placeholder="eg. 8">
+                            <div class="buton">
+                                <button type="submit" id="btn-submit">CHECK</button>
+                            </div>
+                        </form>
+                        <div class="main-message m2">
+                            <p class="mess2" id="output-short">Here the result will be displayed</p>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-info">
+                            <h3>Area of a triangle whose 3 sides are given:</h3>
+                            <br>
+                            <p class="formulae">Heron's Formulae: <strong>√(s(s-a)(s-b)(s-c))</strong> where s=(a+b+c)/2</p>
+                        </div>
+                        <form class="main-form" id="form3">
+                            <label for="side1">Side1 Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side1" id="side1" required="required"
+                                placeholder="eg. 8">
+                            <label for="side2">Side2 Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side2" id="side2" required="required"
+                                placeholder="eg. 9">
+                            <label for="side3">Side3 Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side3" id="side3" required="required"
+                                placeholder="eg. 6">
+                            <div class="buton">
+                                <button type="submit" id="btn-submit">CHECK</button>
+                            </div>
+                        </form>
+                        <div class="main-message m3">
+                            <p class="mess3" id="output-short">Here the result will be displayed</p>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-info">
+                            <h3>Area of a triangle whose 2 sides and angle between them are known</h3>
+                            <br>
+                            <p class="formulae">Formulae: <strong>1/2 × b x c x sin(y)</strong></p>
+                        </div>
+                        <form class="main-form" id="form4">
+                            <label for="side-angle1">Side1 Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side1" id="side-angle1" required="required"
+                                placeholder="eg. 8">
+                            <label for="side-angle2">Side2 Length: </label>
+                            <input type="number" min='0.01' step='any' name="Side2" id="side-angle2" required="required"
+                                placeholder="eg. 10">
+                            <label for="angle1">Angle Value: </label>
+                            <input type="number" min='0.01' max='180' step='any' name="Side1" id="angle1" required="required"
+                                placeholder="eg. 18°">
+                            <div class="buton">
+                                <button type="submit" id="btn-submit">CHECK</button>
+                            </div>
+                        </form>
+                        <div class="main-message m4">
+                            <p class="mess4" id="output-short">Here the result will be displayed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="other-links">
+                <a href="../index.html">HOME</a>
+                <a href="../htmlfiles/check-triangle.html">CHECK ANGLE</a>
+                <a href="../htmlfiles/calculate-area.html">AREA</a>
+                <a href="../htmlfiles/calculate-hypo.html">HYPOTENUSE</a>
+                <a href="../htmlfiles/triangle-quiz.html">QUIZ</a>
+            </div>
+            <div class="footer-tagline">
+                <h2>Made with love by Pavan Kalyan.Available on:</h2>
+            </div>
+            <ul class="footer-socials">
+                <li class="footer-inline">
+                    <a class="footer-links" rel="noopener noreferrer" href="https://github.com/pavan000-code">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="footer-inline">
+                    <a class="footer-links" target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/pavankalyan002">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../jsfiles/area.js"> </script>
+</body>
+</html>

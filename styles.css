@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Rubik:ital,wght@0,400;0,500;1,700&display=swap');
+
+:root {
+    --sec-color: #0A1931;
+    --primary-background: #185ADB;
+    --primary-favicon: #CCFFBD;
+    --sec-text-color: #39A2DB;
+    --text-color: #EFEFEF;
+    --box-shadow-effect: #FFC947;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2em;
+}
+
+body {
+    background-color: var(--primary-background);
+}
+
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navigation {
+    background-color: var(--sec-color);
+    padding: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-repo {
+    text-align: right;
+}
+
+.nav-link {
+    font-size: 2em;
+    color: var(--primary-favicon);
+}
+
+.nav-title {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.main-intro{
+    margin-top: 3vh;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    background-color: var(--sec-color);
+    color:var(--text-color);
+    padding: 2em;
+    margin: 1rem;
+    border-radius: 2em;
+}
+
+.main-intro,.main-message{
+    text-align:center;
+    width:80%;
+    max-width:700px;
+    background-color:var(--sec-color);
+    padding:2em;
+    margin:1rem;
+    margin-top:3vh;
+    border-radius:2em;
+}
+.main-message {
+    display: none;
+    color: var(--sec-text-color);
+    font-weight: 700;
+}
+#output-short{
+    font-size:1.2em;
+}
+.main-intro h3 {
+    font-size: 20px;
+    color: var(--sec-text-color);
+}
+.main-data {
+    margin-top: 3vh;
+}
+
+form {
+    margin: auto;
+    max-width: 80%;
+    padding: 2em;
+    background-color: var(--sec-color);
+    box-shadow: 0 0 10px var(--box-shadow-effect);
+    border-radius: 2em;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text-color);
+}
+
+input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 10px 0;
+    border: unset;
+    border-radius: 10px;
+    outline-color: #fe1493;
+    box-shadow: 0 0 5px var(--sec-color);
+    text-align: center;
+}
+.buton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+
+#btn-submit,
+#btn-reset {
+    background-color: var(--primary-background);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.project-card-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem 1rem;
+    margin: 4rem;
+}
+
+.project-card {
+    background-color: var(--sec-color);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+    border-radius: 10px;
+    border: 1px solid var(--box-shadow-effect);
+}
+
+.project-detail {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.project-go {
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-link {
+    padding: 3px 8px;
+    margin: 10px 10px 0 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px var(--box-shadow-effect), -2px -2px 6px #3a342f;
+    background-color: var(--primary-background);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+.card-title{
+    color:var(--text-color);
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    margin:15px 0;
+}
+.card-subtitle{
+    color: var(--sec-text-color);
+    font-size:17px;
+    line-height: 1.2rem;
+}
+
+/* Triangle Quiz css */
+.main-body{
+    margin:auto;
+    max-width: 80%;
+}
+.option{
+    width:8%;
+    margin: 0;
+    padding-right: 0;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.question-details{
+    background: var(--sec-color);
+    margin:1rem;
+    padding:1rem;
+}
+.question-info{
+    color:var(--text-color);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.2em;
+}
+.question-details label{
+    font-size: 1em;
+}
+input[type="radio"] {
+    margin: 1rem 0.5rem;
+}
+
+/* Area collection */
+.main-collage{
+    width: 85%;
+    padding:20px 10px;
+    margin:0px auto;
+    margin-top:2rem;
+}
+.area-collection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap:1rem 1rem;
+    margin:4rem;
+}
+.area-card{
+    background: var(--box-shadow-effect);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.area-card .main-form{
+    background: transparent;
+}
+.area-info{
+    color:#3a342f;
+    text-align: center;
+    margin-top:1rem;
+}
+.area-card .main-message{
+    background: transparent;
+    margin: auto;
+    color:var(--sec-color);
+    text-align: center;
+}
+.footer {
+    background-color: var(--sec-color);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 1rem;
+}
+.other-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.other-links>a{
+    align-self: stretch;
+    padding:0.8rem 0;
+    text-decoration: none;
+    color:var(--text-color);
+}
+.footer-tagline {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-socials {
+    list-style: none;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+.footer-inline {
+    display: inline;
+    padding: 0 10px;
+}
+
+footer i {
+    font-size: 2em;
+    color: var(--primary-favicon);
+}
+
+@media screen and (max-width:991px){
+    .other-links{
+        display: flex;
+        flex-direction: column;     
+    }
+    .other-links>a{
+        align-self: center;
+    }
+    .question-details{
+        text-align: center;
+    }
+    .question-details label {
+        font-size: 1em;
+        display: block;
+    }
+    .area-collection{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap:3rem 1rem;
+        margin: 1rem;
+
+    }
+}

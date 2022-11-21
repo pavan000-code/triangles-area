@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Trivia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="navigation container">
+            <div class="nav-items">
+                <div class="nav-repo">
+                    <a href="https://github.com/dev-enforced/triangles-arena-m12" target="_blank" class="nav-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <h1 class="nav-title">Triangle Trivia🔺</h1>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>This mini quiz application checks out the individual's knowledge on triangles through the answers one provides while going through the quiz.</h3>
+                <h3>Answer all the questions.</h3>
+            </div>
+
+           <form class="main-body">
+                <div class="question-details">
+                    <p class="question-info">1) How many sides are equal in a scalene triangle?</p>
+                    <label><input type="radio" name="q1" class="option" value="3">3</label>
+                    <label><input type="radio" name="q1" class="option" value="2">2</label>
+                    <label><input type="radio" name="q1" class="option" value="0">0</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">2) The angles of a triangle are 90°,35° and 55°.What type of triangle is this?</p>
+                    <label><input type="radio" name="q2" class="option" value="Right Angled">Right Angled</label>
+                    <label><input type="radio" name="q2" class="option" value="Obtuse Angled">Obtuse Angled</label>
+                    <label><input type="radio" name="q2" class="option" value="Acute Angled">Acute Angled</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">3) The perimeter of an equilateral triangle is 24cm.Length of each side(in cm) is:</p>
+                    <label><input type="radio" name="q3" class="option" value="9">9</label>
+                    <label><input type="radio" name="q3" class="option" value="6">6</label>
+                    <label><input type="radio" name="q3" class="option" value="8">8</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">4) The sum of angles of a triangle is:</p>
+                    <label><input type="radio" name="q4" class="option" value="90°">90°</label>
+                    <label><input type="radio" name="q4" class="option" value="150°">150°</label>
+                    <label><input type="radio" name="q4" class="option" value="180°">180°</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">5) A triangle has angles 60°,60° and 60°.State the type of triangle.</p>
+                    <label><input type="radio" name="q5" class="option" value="Isosceles">Isosceles</label>
+                    <label><input type="radio" name="q5" class="option" value="Equilateral">Equilateral</label>
+                    <label><input type="radio" name="q5" class="option" value="Scalene">Scalene</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">6) What is a third angle for a triangle where angle1 = 57° and angle2 = 92° ?</p>
+                    <label><input type="radio" name="q6" class="option" value="45°">45°</label>
+                    <label><input type="radio" name="q6" class="option" value="60°">60°</label>
+                    <label><input type="radio" name="q6" class="option" value="31°">31°</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">7) Pythagoras theorem is applicable to which type of triangles?</p>
+                    <label><input type="radio" name="q7" class="option" value="Right">Right</label>
+                    <label><input type="radio" name="q7" class="option" value="Acute">Acute</label>
+                    <label><input type="radio" name="q7" class="option" value="Obtuse">Obtuse</label>
+                </div>
+                <div class="question-details">
+                    <p class="question-info">8) The triangle which has 2 sides congruent?</p>
+                    <label><input type="radio" name="q8" class="option" value="Equilateral">Equilateral</label>
+                    <label><input type="radio" name="q8" class="option" value="Isosceles">Isosceles</label>
+                    <label><input type="radio" name="q8" class="option" value="Scalene">Scalene</label>
+                </div>
+
+                <div class="buton">
+                    <button type="submit"  id="btn-submit">CHECK</button>
+                </div>
+            </form>
+
+            <div class="main-message">
+                <p id="output-short">Here the result will be displayed</p>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="other-links">
+                <a href="../index.html">HOME</a>
+                <a href="../htmlfiles/check-triangle.html">CHECK ANGLE</a>
+                <a href="../htmlfiles/calculate-area.html">AREA</a>
+                <a href="../htmlfiles/calculate-hypo.html">HYPOTENUSE</a>
+                <a href="../htmlfiles/triangle-quiz.html">QUIZ</a>
+            </div>
+            <div class="footer-tagline">
+                <h2>Made with love by Dev-Enforced.Available on:</h2>
+            </div>
+            <ul class="footer-socials">
+                <li class="footer-inline">
+                    <a class="footer-links" rel="noopener noreferrer" href="https://github.com/pavan000-code">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="footer-inline">
+                    <a class="footer-links" target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/pavankalyan002">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="../jsfiles/quiz.js"></script>
+</body>
+</html>

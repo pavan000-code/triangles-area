@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK TRIANGLE OR NOT</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="navigation container">
+            <div class="nav-items">
+                <div class="nav-repo">
+                    <a href="https://github.com/dev-enforced/triangles-arena-m12" rel="noopener noreferrer"
+                        target="_blank" class="nav-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <h1 class="nav-title">CHECK TRIANGLE OR NOT</h1>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>This mini application checks whether the given 3 angles form a triangle or not.It will be a triangle
+                    if the sum of all 3 angles is equal to 180°</h3>
+            </div>
+
+            <div class="main-data">
+                <form id="main-form">
+                    <label for="angle1">Angle1: </label>
+                    <input type="number" min='0.01' step='any' name="Angle 1" id="angle1" required="required" placeholder="eg. 50°">
+                    <label for="angle2">Angle2: </label>
+                    <input type="number" min='0.01' step='any' name="Angle 2" id="angle2" required="required"
+                        placeholder="eg. 40°">
+                    <label for="angle1">Angle3: </label>
+                    <input type="number" min='0.01' step='any' name="Angle 1" id="angle3" required="required"
+                        placeholder="eg. 50°">
+                    <div class="buton">
+                        <button type="submit" id="btn-submit">CHECK</button>
+                        <button id="btn-reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="main-message">
+                <p id="output-short">Here the result will be displayed</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="other-links">
+                <a href="../index.html">HOME</a>
+                <a href="../htmlfiles/check-triangle.html">CHECK ANGLE</a>
+                <a href="../htmlfiles/calculate-area.html">AREA</a>
+                <a href="../htmlfiles/calculate-hypo.html">HYPOTENUSE</a>
+                <a href="../htmlfiles/triangle-quiz.html">QUIZ</a>
+            </div>
+            <div class="footer-tagline">
+                <h2>Made with love by Dev-Enforced.Available on:</h2>
+            </div>
+            <ul class="footer-socials">
+                <li class="footer-inline">
+                    <a class="footer-links" rel="noopener noreferrer" href="https://github.com/pavan000-code">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="footer-inline">
+                    <a class="footer-links" target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/pavankalyan002">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../jsfiles/check.js"></script>
+</body>
+</html>
